@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+:root{
+    --body:  hsl(217, 54%, 11%);
+    --card: hsl(216, 50%, 16%);
+    --branco: hsl(0, 0%, 100%);
+    --texto: hsl(215, 24%, 53%);
+    --destaque: hsl(178, 100%, 50%,0.5);
+    --fonte-principal: 'Outfit', sans-serif;
+    --fonte-h1: 'Source Serif Pro', serif;
+
+   
+}
+body{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body)
+    
+    
+}
+.container{
+    
+    max-width: 375px;
+    background-color: var(--card);
+    padding: 20px;
+    margin: 2rem 1rem;
+    border-radius: 15px;
+      
+}
+.foto-principal{
+    
+    overflow: hidden;
+    border-radius: 7px;
+    position: relative;
+    
+}
+.foto-principal img{
+    max-height: 38vh;
+    width: 100%;
+    display: block;
+ 
+    
+}
+.view{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--destaque);
+    display: none;
+    
+}
+.view img{
+    height: 50px;
+    position:absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+.foto-principal:hover .view{
+    display: block; 
+
+}
+h1{
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-weight: 600;
+    margin: 20px 0 20px;
+    font-size: 18px;
+    
+}
+h1:hover{
+    cursor: pointer;
+    color:aqua;
+}
+p{
+    font-family: var(--fonte-principal);
+    color: var(--texto);
+    margin-bottom: 20px;
+  
+}
+
+.information{
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 20px;
+    
+}
+.preco{
+    color: aqua;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+}
+.eth img{
+    padding-right: 3px;
+    
+}
+.data img{
+    padding-right: 3px;
+}
+.data{
+    font-family: var(--fonte-principal);
+    color: var(--texto);
+}
+hr{
+    
+    height: 2px;
+    border: none;
+    border-color: hsl(215, 32%, 27%);
+    background-color: hsl(215, 32%, 27%);
+     
+}
+.avatar img{
+
+   border: 1px solid white;
+   border-radius: 50%;
+   height: 35px;
+   margin-right: 9px;
+   
+   
+      
+}
+.avatar{
+    display: flex;
+    
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+    
+}
+.avatar span{
+    margin-left: 3px;
+    font-size: 15px;
+    color: var(--texto);
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+    
+}
+#autor:hover  {
+    cursor: pointer;
+    color: aqua;
+}
+span #autor{
+    color: white;
+}
+.avatar {
+    display:flex;
+    flex-wrap: wrap;
+}

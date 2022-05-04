@@ -1,0 +1,5 @@
+@media(min-width: 320px){
+    .foto-principal img{
+        max-height: 30vh;
+    }
+}
